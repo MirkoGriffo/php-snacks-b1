@@ -11,6 +11,15 @@
         <h1>Snack 1</h1>
     <?php
 
+/*
+SNACK 1
+Creiamo un array 'matches' contenente altri array i quali rappresentano delle partite di basket di un’ipotetica tappa del calendario.
+Ogni array della partita avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite.
+Stampiamo a schermo tutte le partite con questo schema:
+Olimpia Milano - Cantù | 55-60
+
+ */
+
 $matches = [
     [
         'team1' => 'Detroit Pistons',
@@ -45,6 +54,17 @@ $matches = [
 
         <h1>Snack 2</h1>
         <?php
+/*
+SNACK 2
+Passare come parametri GET (query string) name, mail e age
+verificare (cercando i metodi che non
+conosciamo nella documentazione) che:
+1. name sia più lungo di 3 caratteri
+2. che mail contenga un punto e una chiocciola
+3. che age sia un numero.
+Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
+ */
+
 if (empty($_GET['name']) || empty($_GET['mail']) || empty($_GET['age'])) {
     echo 'Errore, non tutti i parametri richiesti sono stati passati';
 }
